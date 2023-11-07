@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('stars-changing-colors.gif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(155, 119, 152, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px; 
+    color: #771669; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
+    font-weight: bold; 
+    letter-spacing: 2px;
+}
+
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button#addTask {
+    background-color: rgb(86, 17, 109);
+    color: #fefcfc;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+    background-color: #ff6666; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+   
+    :hover {
+        background-color: #ff3333; 
+    }
+}
+
+
+/* Style for completed tasks */
+.transparent span{
+    opacity: 0.5; 
+    text-decoration: line-through; 
+}
